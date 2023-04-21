@@ -7,10 +7,11 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="../css/main.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     </head>
     <body>  
     <!---navbar-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary p-5">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
         <div class="container-fluid py-5  my-0">
           <a class="navbar-brand" href="#">Home</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,11 +19,9 @@
           </button>
           <div class="collapse navbar-collapse justify-content-center bs-blue" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link col-5" href="/index.html">Etusivu</a>
-              <a class="nav-link active col-5" aria-current="page">Ura</a>
-              <a class="nav-link col-4">Perhe</a>
-              <a class="nav-link col-5">Kummipelaaja</a>
-              <a class="nav-link col-5">Kommenttiosio</a>
+              <a class="nav-link " href="/index.html">Etusivu</a>
+              <a class="nav-link active" aria-current="page">Urheilu</a>
+              <a class="nav-link">Kummipelaaja</a>
             </div>
           </div>  
         </div>
@@ -30,35 +29,58 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <img src="/properties/tuuletus takaa.jpg" class="img-fluid pt-2" alt="tuuletus">
+            <img src="/properties/tuuletus takaa.jpg" class="img-fluid pt-1" alt="tuuletus">
           </div>
           <div class="col">
-            <h1 class="text-center">Ura</h1>
-            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <h1 class="text-center pt-5 mt-5">Urheilu</h1>
+            <p class="text-center pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                Earum, temporibus ducimus veritatis pariatur rerum debitis cupiditate fuga perspiciatis vero laudantium quidem voluptate quas modi
                , nemo porro suscipit labore. Debitis, cumque.</p>
           </div>
         </div>
       </div>
-      <div class="container">
+      <div class="container"> <!--Accordion itemi-->
         <div class="row">
           <div class="accordion pt-5" id="accordionPanelsStayOpenExample">
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                  Accordion Item #1
+                  Saavutukset
                 </button>
               </h2>
               <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
                 <div class="accordion-body">
-                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
+                  <div class="container"> 
+                    <table class="table table-borderless">
+                      <tr>
+                        <th>F-Liiga</th>
+                        <th>MM-Kisat</th>
+                        <th>Henkilökohtaiset</th>
+                      </tr>
+                      <tr>
+                        <td>Kulta x6</td>
+                        <td>Kulta x1</td>
+                        <td>Salibandyliigan vuoden maalivahti 2017-18</td>
+                      </tr>
+                      <tr>
+                        <td>Hopea x1</td>
+                        <td>Hopea x1</td>
+                        <td>F-Liiga vuoden maalivahti 2021-22</td>
+                      </tr>
+                      <tr>
+                        <td>Pronssi x1</td>
+                        <td>Pronssi x1</td>
+                        <td>Vuoden paras pelaaja 2022 </td>
+                      </tr>
+                    </table>
+
+                  </div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                  Accordion Item #2
+                  Accordion item 2
                 </button>
               </h2>
               <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
@@ -82,3 +104,16 @@
           </div>
         </div>
       </div>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <img src="/properties/sigi.jpg" class="img-fluid pt-1" alt="tuuletus">
+          </div>
+          <div class="col">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Nihil ut suscipit incidunt ea itaque provident eius mollitia,
+             fugiat repudiandae numquam doloremque libero architecto quia ullam unde aliquid dolor expedita! Enim?
+          </div>
+        </div>
+      </div>
+      </body>
