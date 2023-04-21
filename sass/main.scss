@@ -4,3 +4,19 @@ $primary: #c29938;
 
 // import bootstrap
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/utilities";
+
+//Generating bg and text color for all base Colors
+@each $color, $value in $colors {
+  .bg-#{$color}{
+        background-color: $value !important;
+  }
+
+  .text-#{$color}{
+    color: $value !important;
+  }
+}
+
+@import '~bootstrap/scss/bootstrap';
