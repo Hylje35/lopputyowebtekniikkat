@@ -15,27 +15,28 @@
     <!---navbar-->
     <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
         <div class="container-fluid py-5  my-0">
-          <a class="navbar-brand" href="#">Home</a>
+          <a class="navbar-brand" href="#">
+          </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link col-5" href="../index.html">Etusivu</a>
-              <a class="nav-link col-5" href="./ura.html">Urheilu</a>
-              <a class="nav-link active col-5">Kummipelaaja</a>
+              <a class="nav-link col-5 fs-4" href="../index.html"><i class="fa-solid fa-trophy"></i>Etusivu</a>
+              <a class="nav-link col-5 fs-4" href="./ura.html">Urheilu</a>
+              <a class="nav-link active col-5 fs-4 text-primary" aria-current="page">Kummipelaaja</a>
             </div>
           </div>
         </div>
       </nav>
       <div class="container">
-        <div class="row">
+        <div class="row d-flex align-items-center justify-content-center">
           <div class="col">
             <img src="../properties/tuuletus takaa.jpg" class="img-fluid pt-1 pb-5" alt="tuuletus">
           </div>
           <div class="col">
-            <h1 class="text-center pt-5 mt-5">Kummipelaaja</h1>
-            <p class="text-center pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <h1 class="text-center display-1 text-blue">Kummipelaaja</h1>
+            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                Earum, temporibus ducimus veritatis pariatur rerum debitis cupiditate fuga perspiciatis vero laudantium quidem voluptate quas modi
                , nemo porro suscipit labore. Debitis, cumque.</p>
           </div>
@@ -77,6 +78,19 @@
         </button>
       </div>
     </div>
+    <div class="container text-center pt-5 pb-5">
+      <div class="row">
+        <form>
+          <label for="nimi">Nimi:</label><br>
+          <input type="text" id="nimi" name="nimi"><br>
+          <label for="kommentti">Kommentti</label><br>
+          <textarea id="kommentti" name="kommentti"></textarea><br>
+          <input type="checkbox" id="important" name="important" value="important">
+          <label for="important">Important</label><br>
+          <button type="button" onclick="">Lisää kommentti</button>
+        </form>
+      </div>
+    </div>
     <div class="container">
       <div class="row pt-4">
         <div class="col">
@@ -86,9 +100,9 @@
       </div>
       <div class="row">
         <div class="container text-center pb-5">
-          <a class="" href="https://www.instagram.com/ltoriseva/"><i class="bi bi-instagram fs-1 "></i></a>
-          <a class="" href="https://www.linkedin.com/in/lassi-toriseva-35900b22b/"><i class="bi bi-linkedin fs-1"></i></a>
-          <a class="" href="https://github.com/Hylje35"><i class="bi bi-github fs-1"></i></a>
+          <a class="" href="https://www.instagram.com/ltoriseva/"><i class="bi bi-instagram fs-1 px-2"></i></a>
+          <a class="" href="https://www.linkedin.com/in/lassi-toriseva-35900b22b/"><i class="bi bi-linkedin fs-1 px-2"></i></a>
+          <a class="" href="https://github.com/Hylje35"><i class="bi bi-github fs-1 px-2"></i></a>
         </div>
       </div>
     </div>
