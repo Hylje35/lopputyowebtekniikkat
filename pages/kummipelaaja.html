@@ -78,21 +78,17 @@
         </button>
       </div>
     </div>
-    <div class="container text-center pt-5 pb-5">
-      <div class="row" id="comment">
-        <form>
-          <label for="nimi">Nimi:</label><br>
-          <input type="text" id="nimi" name="nimi"><br>
-          <label for="kommentti">Kommentti</label><br>
-          <textarea type="text" id="kommentti" name="kommentti"></textarea><br>
-          <input type="checkbox" id="important" name="important" value="important">
-          <label for="important" id="important">Important</label><br>
-          <button type="button" id="button" onclick="addComment()">Lisää kommentti</button>
-        </form>
-      </div>
       <div class="row">
-        <h3><span id="date"></span> <span id="name"></span></h3><br>
-        <p><span id="message"></span></p>
+        <div id="respond" class="text-center">
+          <h3>Leave a Comment</h3>
+          <h5>Nimi</h5>
+          <input type="text" id="user"><br>
+          <h5>Kommentti</h5>
+          <textarea id="viesti"></textarea><br>
+          <button id="kommentoi">Kommentoi</button>
+          </form>
+          <div class="div border-2 border-danger"></div>
+        </div>
       </div>
     </div>
     <div class="container">
@@ -112,3 +108,4 @@
     </div>
     <script src="../js/script.js" defer></script>
   </body>
+</html>  

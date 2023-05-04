@@ -1,28 +1,30 @@
-document.querySelector("button").addEventListener("click", addComment);
 
 
-let body = document.querySelector("body");
-let name = document.getElementById("nimi");
-let viesti = document.getElementById("kommentti");
+document.getElementById("kommentoi").addEventListener("click", addComment);
+
+var elements = document.querySelector("#respond");
 let checkbox = document.getElementById("important");
 
 function addComment(){
+    let div = document.createElement("div");
+    let nimi = document.createElement("h3");
+    let kommentti = document.createElement("p");
+    let br = document.createElement("br");
 
+    let date = new Date();
 
-    let h3 = document.createElement("h3");
-    h3.textContent = user.value + " " + new Date().toLocaleString();
+    // The toLocaleString() method returns a string with a language-sensitive representation of this date.//
+    nimi.textContent = date.toLocaleString() + " " + user.value;
+    kommentti.textContent = viesti.value;
+    div.append(nimi);
+    div.append(kommentti);
+    div.append(br);
 
-    let p = document.createElement("p");
-    p.textContent = viesti.value;
+    elements.append(div, document.createElement("div"));
 
-    if(checkbox.checked){
-        h3.classList.add("important");
-        p.classList.add("important");
-    }
-
-    body.append(h3,p, document.createElement("hr"));
 
 }
+
 
 
 
